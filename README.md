@@ -18,93 +18,60 @@
 
 ## Setup
 
-### Prerequisites
-
-- Python 3.7+
-- PyTorch and TorchVision
-- PIL (Pillow)
-- pdf2image
-- Streamlit
-- pyngrok
-- Other dependencies: numpy, matplotlib, editdistance
 
 You can install the required dependencies using `pip`. For example:
 
 ```bash
 pip install torch torchvision pillow pdf2image streamlit pyngrok numpy matplotlib editdistance
-Installation
-Clone the repository:
+```
 
-bash
-Copy
+
+### Prerequisites
+
+- `Python 3.7+`
+- `PyTorch and TorchVision`
+- `PIL (Pillow)`
+- `pdf2image`
+- `Streamlit`
+- `pyngrok`
+
+**Installation**
+- Other dependencies: numpy, matplotlib, editdistance
+- Clone the repository:
+
+**Installation**
+- Other dependencies: numpy, matplotlib, editdistance
+- Clone the repository:
+
+```bash
 git clone https://github.com/yourusername/advanced-document-processing.git
 cd advanced-document-processing
-Set up the environment:
-It is recommended to use a virtual environment.
+```
 
-bash
-Copy
-python -m venv venv
-source venv/bin/activate  # On Windows use: venv\Scripts\activate
-pip install -r requirements.txt  # If you have a requirements file.
-Usage
-PDF to JPG Conversion
-Run the script to convert PDFs located in a specified folder into JPG images:
 
-bash
-Copy
-python pdf_to_jpg.py
-Make sure to update the pdf_folder and jpg_folder paths in the script as needed.
+**Running the Streamlit App**
+- To launch the web app:
 
-JPG to Binary Mask Conversion
-Run the following script to convert your JPG images into binary masks:
+-Run the Streamlit app:
 
-bash
-Copy
-python jpg_to_mask.py
-Ensure the directory paths are correctly set before execution.
-
-Training the AdvancedSegmentation Model
-The segmentation_model.py file contains the training and evaluation routines for the AdvancedTransUNet model. You can run it directly:
-
-bash
-Copy
-python segmentation_model.py
-This script loads images and corresponding masks, trains the model, and saves the trained weights as advanced_transunet_model.pth.
-
-Training the OCR Model
-The OCR model and its training routine are defined in ocr_model.py. To train the OCR model, run:
-
-bash
-Copy
-python ocr_model.py
-This script prepares the dataset, trains the Hybrid CNN+Transformer model using CTC loss, and evaluates the model using CER and WER metrics.
-
-Running the Streamlit App
-To launch the web app:
-
-Run the Streamlit app:
-
-bash
-Copy
+```bash
 streamlit run app.py
-Ngrok Integration:
-If running in a notebook environment, the code in app.py automatically launches the Streamlit app and creates an ngrok tunnel. Update the ngrok auth token in the script with your own if necessary.
+```
 
-The Streamlit app lets you upload an image, view its binary mask, and see the segmentation output predicted by the AdvancedTransUNet model.
+**Ngrok Integration:**
+If running in a notebook environment, the code in `app.py` automatically launches the Streamlit app and creates an ngrok tunnel. Update the ngrok auth token in the script with your own if necessary.
 
-Contributing
+
+### The Streamlit app lets you upload an image, view its binary mask, and see the segmentation output predicted by the AdvancedTransUNet model.
+
+**Contributing:**
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
 
-License
+**License:**
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-csharp
-Copy
 
-Simply copy this code into your `README.md` file in your repository.
-
-
+Simply copy this code block into your repository's `README.md` file.
 
 
 
