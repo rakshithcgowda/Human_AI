@@ -1,3 +1,6 @@
+# Text Recognition with Transformer Models
+
+
 ![Project Banner](External_Images/image.png)
 ## Features
 
