@@ -1,39 +1,78 @@
-# Multi-Stage Document Processing and OCR Pipeline
 
-This repository contains a multi-stage pipeline for processing documents and extracting information using deep learning. The project includes the following modules:
+## Features
 
-1. **PDF to JPG Conversion:**  
-   Converts PDF files into JPG images. Each page of a PDF is saved as a separate JPG image.
+- **PDF to JPG Conversion:**  
+  Process PDFs one page at a time to reduce memory usage, saving each page as a separate JPG.
 
-2. **JPG to Binary Mask Conversion:**  
-   Processes JPG images to create corresponding binary mask images based on a simple thresholding method.
+- **JPG to Mask Conversion:**  
+  Generate binary masks from JPG images using a customizable threshold. This is useful for preprocessing before segmentation.
 
-3. **Layout Segmentation with TransUNet:**  
-   Implements a TransUNet model that uses a U-Net architecture with a transformer in the bottleneck for layout segmentation tasks (e.g., separating background from main text).
+- **AdvancedTransUNet Segmentation Model:**  
+  An enhanced U-Net variant that incorporates residual double convolution blocks, attention-based skip connections, and a transformer bottleneck for improved layout segmentation.
 
-4. **Word Document to OCR Data Extraction:**  
-   Extracts text from Microsoft Word documents (.docx) and renders each paragraph/page as an image and text file.
+- **OCR Pipeline:**  
+  A hybrid CNN+Transformer architecture designed for OCR tasks, complete with training, evaluation (using CER/WER), and visualization of error distributions.
 
-5. **OCR with a Hybrid CNN+Transformer Model:**  
-   A hybrid deep learning model for optical character recognition (OCR) that combines a CNN backbone for spatial feature extraction with a Transformer encoder for sequence modeling. The model is trained with CTC loss and evaluated using Character Error Rate (CER) and Word Error Rate (WER).
+- **Streamlit Web App:**  
+  An interactive interface to upload images, convert them to binary masks, and run segmentation predictions using a pretrained AdvancedTransUNet model. The app also supports ngrok tunneling for public access.
 
-## Repository Structure
+## Setup
 
 
-## Requirements
-
-Ensure you have Python 3.7 or higher installed. The following Python packages are required:
-
-- `Pillow`
-- `pdf2image`
-- `torch`
-- `torchvision`
-- `python-docx`
-- `numpy`
-- `editdistance`
-- `matplotlib`
-
-You can install the required dependencies using `pip`:
+You can install the required dependencies using `pip`. For example:
 
 ```bash
-pip install pillow pdf2image torch torchvision python-docx numpy editdistance matplotlib
+pip install torch torchvision pillow pdf2image streamlit pyngrok numpy matplotlib editdistance
+```
+
+
+### Prerequisites
+
+- `Python 3.7+`
+- `PyTorch and TorchVision`
+- `PIL (Pillow)`
+- `pdf2image`
+- `Streamlit`
+- `pyngrok`
+
+**Installation**
+- Other dependencies: numpy, matplotlib, editdistance
+- Clone the repository:
+
+**Installation**
+- Other dependencies: numpy, matplotlib, editdistance
+- Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/advanced-document-processing.git
+cd advanced-document-processing
+```
+
+
+![Project Banner](banner.png)
+**Running the Streamlit App**
+- To launch the web app:
+
+-Run the Streamlit app:
+
+```bash
+streamlit run app.py
+```
+
+**Ngrok Integration:**
+If running in a notebook environment, the code in `app.py` automatically launches the Streamlit app and creates an ngrok tunnel. Update the ngrok auth token in the script with your own if necessary.
+
+
+### The Streamlit app lets you upload an image, view its binary mask, and see the segmentation output predicted by the AdvancedTransUNet model.
+
+**Contributing:**
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+
+**License:**
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+
+Simply copy this code block into your repository's `README.md` file.
+
+
+
