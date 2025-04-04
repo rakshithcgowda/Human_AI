@@ -44,8 +44,8 @@ pip install torch torchvision pillow pdf2image streamlit pyngrok numpy matplotli
 - Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/advanced-document-processing.git
-cd advanced-document-processing
+git clone https://github.com/yourusername/Human_AI.git
+cd Human_AI
 ```
 
 ## Results
