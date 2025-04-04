@@ -49,7 +49,7 @@ cd Human_AI
 ```
 
 ## Results
-- **Specific Task 1**
+- ### Specific Task 1 : *Layout Organization Recognition*
 
 *Validation IoU* (Intersection over Union) = `96.66%`
 
@@ -59,7 +59,7 @@ cd Human_AI
 
 -It is more sensitive to small segmentation errors. A Dice score of 0.9827 means that the predicted segmentation is 98.27% accurate in capturing the target regions.
 
-- **Specific Task 2**
+- ### Specific Task 2 : *Optical Character Recognition*
 
 -The OCR model was evaluated using Character Error Rate (CER), Word Error Rate (WER).
 
