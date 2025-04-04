@@ -90,10 +90,11 @@ If running in a notebook environment, the code in `app.py` automatically launche
 
 
 
-**Contributing:**
+
+***Contributing:***
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
 
-**License:**
+***License:***
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 
