@@ -48,8 +48,13 @@ git clone https://github.com/yourusername/advanced-document-processing.git
 cd advanced-document-processing
 ```
 
+## Results
+-**Specific Task 1**
 
-![Project Banner](banner.png)
+-**Specific Task 2**
+
+
+
 **Running the Streamlit App**
 - To launch the web app:
 
