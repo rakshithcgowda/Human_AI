@@ -49,6 +49,7 @@ cd advanced-document-processing
 ```
 
 
+![Project Banner](banner.png)
 **Running the Streamlit App**
 - To launch the web app:
 
