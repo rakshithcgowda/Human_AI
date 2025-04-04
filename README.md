@@ -53,11 +53,11 @@ cd advanced-document-processing
 
 *Validation IoU* (Intersection over Union) = 0.9666
 
--A higher IoU (closer to 1) indicates better segmentation performance. An IoU of 0.9666 means that 96.66% of the predicted mask aligns with the actual mask.
+-A higher IoU (closer to 1) indicates better segmentation performance. An IoU of 0.9666 means that `96.66%` of the predicted mask aligns with the actual mask.
 
 *Validation Dice Coefficient* = 0.9827
 
--It is more sensitive to small segmentation errors. A Dice score of 0.9827 means that the predicted segmentation is 98.27% accurate in capturing the target regions.
+-It is more sensitive to small segmentation errors. A Dice score of 0.9827 means that the predicted segmentation is `98.27%` accurate in capturing the target regions.
 
 - **Specific Task 2**
 
