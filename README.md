@@ -1,4 +1,4 @@
-![Project Banner](image.png)
+![Project Banner](External_Images/image.png)
 ## Features
 
 - **PDF to JPG Conversion:**  
@@ -83,6 +83,10 @@ If running in a notebook environment, the code in `app.py` automatically launche
 
 
 ### The Streamlit app lets you upload an image, view its binary mask, and see the segmentation output predicted by the AdvancedTransUNet model.
+
+![Project Banner](External_Images/gif_specific_2.gif)
+
+
 
 **Contributing:**
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
