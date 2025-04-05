@@ -19,6 +19,25 @@
 - **Streamlit Web App:**  
   An interactive interface to upload images, convert them to binary masks, and run segmentation predictions using a pretrained AdvancedTransUNet model. The app also supports ngrok tunneling for public access.
 
+
+  ## Challenges and Learning
+
+- **Data Quality and Preprocessing:**  
+  Managing varying image quality and artifacts was challenging, which led to extensive experimentation with preprocessing techniques to ensure robust performance.
+
+- **Balancing Model Complexity and Efficiency:**  
+  Integrating advanced components like transformer bottlenecks and attention mechanisms improved segmentation accuracy but required careful tuning to maintain feasible training times and resource usage.
+
+- **Handling OCR Variability:**  
+  The OCR pipeline faced challenges with diverse fonts, layouts, and noise in input images, prompting iterative improvements to reduce Character Error Rate (CER) and Word Error Rate (WER).
+
+- **Deployment and Integration:**  
+  Creating a seamless Streamlit web app with ngrok tunneling for public access required overcoming hurdles related to model loading, inference speed, and user interface design.
+
+- **Debugging and Iterative Learning:**  
+  The project involved continuous debugging and refinement, which deepened understanding of both traditional CNNs and modern transformer architectures in computer vision tasks.
+
+
 ## Setup
 
 
