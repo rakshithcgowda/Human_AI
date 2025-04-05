@@ -39,7 +39,7 @@
 
 
 ## High Level Design
-![OCR Demo](External_Images/hig_level_design)
+![OCR Demo](External_Images/hig_level_design.png)
 
 
 
