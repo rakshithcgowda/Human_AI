@@ -92,7 +92,7 @@ cd Human_AI
 
 *CER = 0.293* → 29.3% of characters are incorrect. Lower is better.
 
-*WER = 0.563* → 56.3% of words contain errors. Lower is better.
+*WER = 0.545* → 54.5% of words contain errors. Lower is better.
 
 
 
