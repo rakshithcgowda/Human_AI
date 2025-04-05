@@ -91,7 +91,7 @@ If running in a notebook environment, the code in `app.py` automatically launche
 
 ![Project Banner](External_Images/gif_specific_2.gif)
 
-
+![Project Banner](External_Images/gif_specific_1.gif)
 
 
 ***Contributing:***
