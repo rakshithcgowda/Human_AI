@@ -38,6 +38,11 @@
   The project involved continuous debugging and refinement, which deepened understanding of both traditional CNNs and modern transformer architectures in computer vision tasks.
 
 
+## High Level Design
+![OCR Demo](External_images/Screenshot_2025-04-05_110228.png)
+
+
+
 ## Setup
 
 
