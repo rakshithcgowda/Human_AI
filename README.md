@@ -87,11 +87,16 @@ If running in a notebook environment, the code in `app.py` automatically launche
 
 ### The Streamlit app lets you upload an image, view its binary mask, and see the segmentation output predicted by the AdvancedTransUNet model.
 
+-- **Specific Task I - Layout Organization Recognition**
+
+![Project Banner](External_Images/gif_specific_1.gif)
+
+
 - **Specific Task II - Optical Character Recognition (OCR)**
 
 ![Project Banner](External_Images/gif_specific_2.gif)
 
-![Project Banner](External_Images/gif_specific_1.gif)
+
 
 
 ***Contributing:***
